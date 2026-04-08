@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PL/SQL Iterative Control</title>
+    <link rel="stylesheet" href="plsql_iterative_control.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="hero">
+        <div class="header-content">
+            <h1 style="padding-top: 32PX;"><span>PLSQL: ITERATIVE CONTROL STATEMENTS</span></h1>
+            <a href="index.html" class="back-link">← Back to Home</a>
+        </div>
+    </header>
+
+
+    <main class="container" id="question-list">
+    </main>
+    
+    <script src="plsql_iterative_control.js"></script>
+
+    <script>
+        document.querySelectorAll('.toggle-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const card = button.closest('.program-card');
+        
+        // Toggle active class on the card
+        card.classList.toggle('active');
+
+        // Change button text
+        if (card.classList.contains('active')) {
+            button.textContent = 'Hide Output';
+        } else {
+            button.textContent = 'Show Output';
+        }
+    });
+});
+    </script>
+</body>
+
+</html>

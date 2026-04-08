@@ -1,0 +1,261 @@
+:root {
+    --primary: #1675f1;
+    --dark: #1e1e1e;
+    --light-blue: #e9f2ff;
+    --white: #ffffff;
+    --shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-blue);
+    color: #333;
+}
+
+/* Header & Hero */
+.header,
+.hero {
+    background: linear-gradient(135deg, #1675f1 0%, #0056b3 100%);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Button Grid */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.btn {
+    background: var(--white);
+    color: var(--dark);
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    box-shadow: var(--shadow);
+}
+
+.btn:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-5px);
+}
+
+/* Lab Cards */
+.lab-container {
+    max-width: 1000px;
+    margin: -40px auto 50px;
+    padding: 0 20px;
+}
+
+.program-card {
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    border-left: 5px solid var(--primary);
+}
+
+.question-header {
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.q-text {
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+.toggle-btn {
+    padding: 10px 20px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Output Display */
+.expand-content {
+    max-height: 0;
+    overflow: hidden;
+    background: #f9f9f9;
+}
+
+.program-card.active .expand-content {
+    max-height: 1000px;
+    padding: 20px;
+}
+
+.code-editor {
+    background: var(--dark);
+    color: #dcdcaa;
+    border-radius: 8px;
+    padding: 20px;
+    font-family: 'Fira Code', monospace;
+}
+
+.output-img {
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 15px;
+    border: 1px solid #444;
+}
+
+.love {
+    text-align: center;
+    padding: 40px;
+    color: #888;
+}
+
+
+
+/* cards */
+
+:root {
+    /* Oracle Aesthetic Palette */
+    --primary-blue: #1675f1;
+    /* Main blue from reference */
+    --oracle-orange: #FFB119;
+    /* Standard orange from reference */
+    --bg-light: #f4f6fc;
+    /* Subtle blue/grey background */
+    --text-white: #ffffff;
+    --text-grey: #888888;
+    --card-bg: #ffffff;
+    --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    --hover-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+    /* Spacing & Borders */
+    --radius-lg: 12px;
+    --radius-sm: 6px;
+    --transition: all 0.3s ease-in-out;
+}
+
+
+
+/* cards */
+.standard-card {
+    display: block;
+    background-color: var(--card-bg);
+    border: 1px solid #c9bfbf;
+    border-radius: var(--radius-lg);
+    padding: 25px 30px;
+    max-width: 400px;
+    width: 100%;
+    text-decoration-line: none;
+    color: #333;
+    box-shadow: var(--card-shadow);
+    text-align: left;
+    cursor: pointer;
+    margin-inline: 20px;
+        transition:0.3s;
+
+    /* box-shadow: 0 1px 10px #1675f1 ; */
+
+}
+
+/* Add Transition Hover Effect */
+.standard-card:hover{
+    transform: translateY(-8px);
+    box-shadow: var(--hover-shadow);
+    border-color: #ddd;
+    box-shadow: 0 0 15px #1675f1;
+}
+
+/* MY HOVER EFFECT! */
+
+.standard-card:hover .status-label{
+    color: #1675f1a7;
+}
+.standard-card:hover .progress-bar-placeholder{
+    background-color: #1675f1;
+   
+}
+/* .standard-card:hover .MM{
+    color: #1675f1a7;
+} */
+.standard-card:hover .problems-count{
+    color: #1675f1a7;
+}
+
+
+.card-display-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 80px auto 10px;
+    /* Add top spacing for cards */
+}
+
+.card-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.card-title-row h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.3;
+    max-width: 80%;
+    /* Match image spacing */
+}
+
+.chevron {
+    font-size: 1.5rem;
+    color: #ccc;
+    position: relative;
+    top: -5px;
+}
+
+/* Apply professional grey text from reference */
+.problems-count {
+    font-size: 0.9rem;
+    color: var(--text-grey);
+    margin-bottom: 15px;
+}
+
+.progress-bar-placeholder {
+    height: 4px;
+    background: #e6e6e6;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+.progress-bar-placeholder:hover {
+    background: #1675f1;
+}
+
+
+.status-label {
+    font-size: 0.8rem;
+    color: #aba9a9;
+    /* Match light status text from reference */
+    font-weight: 600;
+        transition:0.3s;
+
+}
