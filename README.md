@@ -4,9 +4,22 @@ A Database Management System (DBMS) mini project created as part of a college ac
 This project demonstrates how relational databases are designed and how structured data can be stored, managed, and retrieved efficiently using SQL queries.
 The project focuses on applying core DBMS concepts such as table relationships, normalization, constraints, and query execution.
 
+
+🌐 Live Project
+
+🚀 View the Live Project Here
+
+🔗 Live Demo:
+https://promohan.github.io/collage-DBMS-project/
+
+📂 GitHub Repository:
+https://github.com/promohan/collage-DBMS-project
+
+
 📌 Project Overview
 Database systems are used everywhere — from banking systems to social media platforms.
 This project demonstrates the fundamental working of a Relational Database Management System (RDBMS).
+
 
 🚀 Features
 
